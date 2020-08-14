@@ -1,6 +1,7 @@
 {% load static %}
 <html>
     <head>
+        <link rel="icon" href="static/images/favicon.ico">
         <title>dni957</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -18,14 +19,20 @@
                 <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>
             {% endif %}
             <h1><a href="/">A student's life at UoB</a></h1>
+
         </div>
+        <div>
+            <img class="image_index" src="{% static 'images/home.jpg' %}" alt="UoB" style="float: right" margin="50px" height="300px" >
+        </div>
+
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
         </div>
+
     </body>
 </html>
