@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #1B7ACD;
+    background-color: #0471ec;
     margin-top: 0;
     padding: 20px 20px 20px 50px;
 }
@@ -50,4 +50,8 @@ h1, h2, h3, h4 {
     float: right;
     margin-right: 20px;
 
+}
+
+body {
+    background-color: #b0fdff;
 }
